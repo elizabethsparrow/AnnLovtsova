@@ -1,0 +1,539 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  background-color: #FFF0CD;
+}
+
+section {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+section.__active {
+  background-color: #000;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 768px;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 92%;
+  margin: auto;
+}
+
+.action-button {
+  display: block;
+}
+
+.action-button button {
+  width: 100%;
+  padding: 10px 30px;
+  font-family: Cormorant Unicase;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  background: linear-gradient(91.17deg, #F4AC0B 4.11%, #FFD77D 100%, #FFF0CD 100%);
+  box-shadow: 3px 4px 10px rgba(203, 140, 0, 0.3);
+  border-radius: 33px 0px;
+}
+
+.title {
+  padding-bottom: 30px;
+}
+
+h2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  font-family: Cormorant Unicase;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: lowercase;
+  white-space: pre;
+}
+
+h2::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  margin-left: 15px;
+  background-color: #000;
+}
+
+h3 {
+  font-family: Cormorant Unicase;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px;
+}
+
+p {
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.section-img {
+  margin-bottom: 50px;
+}
+
+.header__title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.header__name {
+  font-family: Cormorant Unicase;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.header__position {
+  font-family: Cormorant Unicase;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.header__about {
+  position: relative;
+  width: 100vw;
+  height: 440px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 375px) {
+  .header__about {
+    height: 390px;
+  }
+}
+
+.header__img {
+  position: absolute;
+  z-index: -1;
+  margin: auto;
+  left: 0;
+  width: 100%;
+}
+
+.header__descr {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 15px;
+  margin-bottom: 30px;
+  max-width: 205px;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.header__descr .colored {
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #F4AC0B;
+}
+
+.about-me__img {
+  float: right;
+}
+
+.about-me__texts {
+  width: 100%;
+}
+
+.about-me__texts p {
+  margin-bottom: 12px;
+}
+
+.about-me__pre-title {
+  color: #3AA2FE;
+}
+
+.about-me__pre-title::after {
+  background-color: #3AA2FE;
+}
+
+.about-me__list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.about-me__list::before {
+  content: url("../../img/stars/blue-star.svg");
+  margin-right: 10px;
+}
+
+.consultations__wrapper h2 {
+  margin-bottom: 30px;
+  color: #A4C700;
+}
+
+.consultations__wrapper h2::after {
+  background-color: #A4C700;
+}
+
+.consultations__term .colored {
+  color: #A4C700;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.consultations__list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.consultations__list:last-child {
+  margin-bottom: 0;
+}
+
+.consultations__list::before {
+  content: url(../../img/stars/green-star.svg);
+  margin-right: 10px;
+}
+
+.consultations__stage {
+  margin: 50px 0;
+}
+
+.consultations__stage-title {
+  display: flex;
+}
+
+.consultations__stage-title h3 {
+  margin-left: 13px;
+}
+
+.consultations__stage-lists {
+  margin-top: 20px;
+}
+
+.consultations__stage-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.consultations__stage-list:last-child {
+  margin-bottom: 0;
+}
+
+.consultations__stage-list::before {
+  content: url(../../img/stars/green-star.svg);
+  margin-right: 10px;
+}
+
+.consultations__benefit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.consultations__benefit img {
+  margin-bottom: 10px;
+}
+
+.consultations__benefit h3 {
+  text-align: center;
+  color: #A4C700;
+}
+
+.consultations__benefit p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.reviews__swiper-container {
+  width: 100%;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+.reviews__img {
+  float: right;
+}
+
+.reviews__swiper-navigation {
+  position: relative;
+  width: 100px;
+  margin: auto;
+  transform: translateY(60px);
+}
+
+.reviews__author {
+  display: flex;
+  align-items: center;
+}
+
+.reviews__avatar {
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.reviews__avatar img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.reviews__nick-name {
+  font-family: Cormorant Unicase;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  color: #A82209;
+}
+
+.reviews__text {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.swiper-button-prev::after {
+  content: url("../../img/arrow-prev.svg");
+}
+
+.swiper-button-next::after {
+  content: url("../../img/arrow-next.svg");
+}
+
+.qna__part {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.qna__part:last-child {
+  margin-bottom: 0;
+}
+
+.qna__part::after {
+  content: url("../../img/cancer.svg");
+  transition: .2s;
+}
+
+.qna__part.__active::after {
+  transition: .2s;
+  transform: rotate(45deg);
+}
+
+.qna__part.__active .qna__part-content .qna__answer {
+  display: block;
+  transition: 0.2s;
+}
+
+.qna__answer {
+  display: none;
+}
+
+.guide__title {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.guide__offer {
+  position: absolute;
+  right: 0;
+}
+
+.guide__offer .colored {
+  color: #3AA2FE;
+}
+
+.guide__subscribe {
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.guide__subscribe-img {
+  float: right;
+}
+
+.guide__direct {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.guide__take-guide {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.guide__take-guide h3 {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+}
+
+.how-to-take__img {
+  float: right;
+}
+
+@media (max-width: 320px) {
+  .how-to-take__title {
+    width: 100%;
+  }
+}
+
+.how-to-take__lists a {
+  color: #A82209;
+}
+
+.how-to-take__list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.how-to-take__list:last-child {
+  margin-bottom: 0;
+}
+
+.how-to-take__list::before {
+  content: url("../../img/stars/big-red-star.svg");
+  margin-right: 30px;
+}
+
+.contacts__container {
+  width: 100%;
+}
+
+.contacts__container a {
+  border-radius: 50px;
+}
+
+.contacts__container a img {
+  margin-right: 10px;
+}
+
+.contacts__container a p {
+  color: #fff;
+}
+
+.contacts__telegram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  background-color: #3AA2FE;
+}
+
+.contacts__instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #A4C700;
+}
+
+@supports (-webkit-appearance:none){
+
+}
+
+ @media (max-width: 375px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 320px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
